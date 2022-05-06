@@ -57,7 +57,7 @@ CREATE TABLE SpotifyClone.hst_reproducoes(
   usuario_id INT NOT NULL,
   data_reproducao DATETIME NOT NULL,
   id_cancao INT NOT NULL,
-  PRIMARY KEY (id),
+  PRIMARY KEY (id_reproducao),
   FOREIGN KEY (id_cancao) REFERENCES cancoes(id_cancao),
   FOREIGN KEY (usuario_id) REFERENCES users(usuario_id)
 ) engine = InnoDB;
