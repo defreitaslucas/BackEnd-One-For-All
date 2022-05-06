@@ -2,4 +2,4 @@ SELECT a.usuario AS 'usuario', COUNT(DISTINCT b.id_cancao) as 'qtde_musicas_ouvi
 FROM SpotifyClone.users a join
 SpotifyClone.hst_reproducoes b on (a.usuario_id = b.usuario_id) join
 SpotifyClone.cancoes c on (b.id_cancao = c.id_cancao)
-GROUP BY a.usuario
+GROUP BY a.usuario;
