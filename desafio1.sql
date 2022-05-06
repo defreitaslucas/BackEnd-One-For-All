@@ -53,7 +53,7 @@ CREATE TABLE SpotifyClone.cancoes(
 ) engine = InnoDB;
 
 CREATE TABLE SpotifyClone.hst_reproducoes(
-  id INT NOT NULL,
+  id_reproducao INT NOT NULL,
   usuario_id INT NOT NULL,
   data_reproducao DATETIME NOT NULL,
   id_cancao INT NOT NULL,
@@ -172,7 +172,7 @@ VALUES
   (39, 'Baby', '00:02:26', 10),
   (40, 'You Make Me Feel So..', '00:01:38', 10);
 
-INSERT INTO SpotifyClone.hst_reproducoes (id, usuario_id, data_reproducao, id_cancao)
+INSERT INTO SpotifyClone.hst_reproducoes (id_reproducao, usuario_id, data_reproducao, id_cancao)
 VALUES
   (1, 1, '2020-02-28 10:45:55', 36),
   (2, 1, '2020-05-02 05:30:35', 25),
